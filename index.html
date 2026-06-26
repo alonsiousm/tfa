@@ -55,23 +55,39 @@
     <link rel="stylesheet" type="text/css" href="build/css/style.css" />
 
     <title>Silly Comedy Festival - Festival d'Humour et Stand-up</title>
+    <meta name="robots" content="noindex, nofollow">
+      <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
   </head>
   <body>
     <header>
       <div id="logo">
         <a href="index.html">
           <img src="build/images/logocomedynoir.svg" alt="logo"
-        /></a>
-      </div>
-      <nav>
+          /></a>
+        </div>
+    
+      <nav id="Sidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">&times;</a>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="index.html#lineup">Line up</a></li>
           <li><a href="index.html#programme">Programme</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="billetterie.html" class="ticket">Billetterie</a></li>
         </ul>
       </nav>
+      <a href="#Sidenav" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      
     </header>
     <div class="slide" id="homeNoir">
       <div class="reseau">
@@ -320,8 +336,8 @@
                 <path
                   d="M35 0C15.6653 0 0 15.6653 0 35C0 54.3347 15.6653 70 35 70C54.3347 70 70 54.3347 70 35C70 15.6653 54.3347 0 35 0ZM15.8065 30.3992C16.2722 24.4577 20.3508 20.3226 23.7097 20.3226C27.0685 20.3226 31.1472 24.4577 31.6129 30.3992C31.7117 31.6129 30.0887 32.0786 29.5101 31.0343L28.1694 28.6351C27.0827 26.7016 25.4597 25.5867 23.7238 25.5867C21.9879 25.5867 20.3649 26.7016 19.2782 28.6351L17.9375 31.0343C17.3306 32.0786 15.7077 31.5988 15.8065 30.3992ZM51.2016 47.7298C47.1794 52.5565 41.2802 55.3226 35 55.3226C28.7198 55.3226 22.8206 52.5565 18.7984 47.7298C16.8931 45.4294 20.3508 42.5504 22.2702 44.8367C25.4315 48.6331 30.0605 50.7923 35 50.7923C39.9395 50.7923 44.5686 48.619 47.7298 44.8367C49.6492 42.5504 53.1069 45.4436 51.2016 47.7298ZM52.0766 31.0343L50.7359 28.6351C49.6492 26.7016 48.0262 25.5867 46.2903 25.5867C44.5544 25.5867 42.9314 26.7016 41.8448 28.6351L40.504 31.0343C39.9254 32.0645 38.3024 31.5988 38.4012 30.3992C38.8669 24.4577 42.9456 20.3226 46.3044 20.3226C49.6633 20.3226 53.7419 24.4577 54.2077 30.3992C54.2923 31.6129 52.6552 32.0786 52.0766 31.0343Z"
                   fill="white"
-                /></svg></span
-            >tre newsletter
+                /></svg>
+                </span>tre newsletter
           </div>
         </div>
       </section>
@@ -462,6 +478,7 @@
           header.classList.remove("scroll");
         }
       });
+    
     </script>
   </body>
 </html>

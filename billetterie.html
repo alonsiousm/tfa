@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="build/css/style.css">
     
     <title>Billetterie : Réservez vos Places | Silly Comedy Festival</title>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
     <header>
@@ -27,7 +28,9 @@
             <a href="index.html">
             <img src="build/images/logocomedynoir.svg" alt="logo"></a>
         </div>
-        <nav>
+        <nav id="Sidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="index.html#lineup">Line up</a></li>
@@ -36,6 +39,13 @@
                 <li><a href="billetterie.html" class="ticket">Billetterie</a></li>
             </ul>
         </nav>
+         <a href="#Sidenav" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
     </header>
     <div class="slide" id="homeClair">
         <div class="reseau">
@@ -84,29 +94,39 @@
                  <div class="cadre">
             <input type="text" name="email" placeholder="Email" class="champ-texte">
             </div>
-           <div class="cadre"><div class="champ-texte">
-            <label for="nb-jours" class="jours">N° jours</label>
-            <select id="nb-jours" name="jours" class="select-fleche">
+            <div class="cadre">
+                <div class="champ-texte">
+                    <label for="nb-jours" class="jours"></label>
+                    <select class="form-select" aria-label="Default select example">
+                <option selected>N° jours</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-            </select></div>
+                    </select>
+                 </div>
             </div>
-            <div class="cadre"><div class="champ-texte">
-            <label for="nb-personnes" class="personnes">N° personnes</label>
-            <input type="number" id="nb-personnes" name="personnes" min="1" max="99" placeholder="0" class="champ-chiffre">
-            </div></div>
-            <div class="petit-cadre"><div class="champ-texte">
-                 <label for="parking" class="parking">Parking</label>
-            <select id="parking" name="parking" class="select-fleche">
-                <option value="1">oui</option>
-                <option value="2">non</option>
-            
-            </select></div>
-        </div>
-            <div class="petit-cadre"><div class="champ-texte">
-                <div class="prix">Prix :</div>
-        </div></div>
+            <div class="cadre">
+                <div class="champ-texte">
+                    <label for="nb-personnes" class="personnes">N° personnes :</label>
+                    <input type="number" id="nb-personnes" name="personnes" min="1" max="99" placeholder="0" class="champ-chiffre">
+                </div>
+            </div>
+            <div class="petit-cadre">
+                <div class="champ-texte">
+                 <label for="parking" class="parking"></label>
+                    <select class="form-select" aria-label="Default select example">
+                <option selected>Parking</option>
+                <option value="oui">OUI</option>
+                <option value="non">NON</option>
+                
+                    </select>
+                </div>
+            </div>
+            <div class="petit-cadre">
+                <div class="champ-texte">
+                    <div class="prix">Prix :</div>
+                </div>
+            </div>
         
         <div class="solde" id="Billetterie">
                 <a href="billetterie.html">
